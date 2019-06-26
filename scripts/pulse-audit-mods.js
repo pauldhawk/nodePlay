@@ -1,4 +1,4 @@
-const { get, has, partition, groupBy, padStart } = require('lodash');
+const { get, has, partition, groupBy, padStart } = require('./node_modules/lodash');
 const modules = require('./data/mock-raw-modules');
 const flat_mods = require('./data/mock_modules')
 
