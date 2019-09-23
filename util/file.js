@@ -6,7 +6,10 @@ const readFile = (dpath) => {
   return fs.readFileAsync(dpath, "utf8");
 }
 
-const writeFile = ({data, path, filename}) => { return null; }
+const writeFile = (({data, filename}) => {
+  return fs.writeFileAsync(filename, data)
+
+});
 
 module.exports = {
   readFile,

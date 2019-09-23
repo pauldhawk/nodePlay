@@ -8,6 +8,11 @@
     "prettier-watch": "onchange '**/*.js' -- prettier --write {{changed}}",
     "start": "nodemon ./index.js"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -19,6 +24,8 @@
   "dependencies": {
     "chance": "^1.0.18",
     "faker": "^4.1.0",
+    "ical2json": "^2.0.0",
+    "json-2-csv": "^3.5.6",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "nodemon": "^1.18.6"
